@@ -1,4 +1,4 @@
-import './social.css';
+import './Social.css';
 import { FaInstagram, FaWhatsapp, FaMapMarkerAlt } from 'react-icons/fa';
 
 

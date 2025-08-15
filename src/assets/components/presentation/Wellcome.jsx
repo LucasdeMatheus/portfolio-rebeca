@@ -1,4 +1,4 @@
-import './wellcome.css';
+import './Wellcome.css';
 import Social from "./Social.jsx";
 
 function Wellcome() {

@@ -1,4 +1,4 @@
-import './services.css';
+import './Services.css';
 import { useEffect, useRef } from "react";
 import Contact from '../contact/Contact.jsx'
 import procedures from '../../data/images.json';
