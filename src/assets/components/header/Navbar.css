@@ -1,0 +1,99 @@
+/* navbar.css */
+.navbarContainer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: clamp(0.3rem, 1.5vw, 1rem);
+  gap: 4%;
+  display: flex;
+  justify-content: right;
+  transition: 0.2s;
+}
+
+.navbarContainer .nav {
+  cursor: pointer;
+  color: rgb(0, 0, 0);
+  display: inline-block;
+  /* ou block, dependendo do caso */
+  text-align: center;
+}
+
+.navbarContainer .linebar {
+  all: initial;
+  width: clamp(1.3rem, 3vw, 2rem);
+  height: clamp(1.3rem, 3vw, 2rem);
+  position: absolute;
+  bottom: 5000px;
+  padding: 8px;
+  border-radius: 45px;
+  transition: 0.2s;
+  background-color: #ffd9fc;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgb(0, 0, 0);
+}
+
+.navbarContainer .linebar-active {
+  color: rgb(0, 0, 0);
+  background-color: #fdd1fa6c;
+
+}
+.navbarContainer.active {
+  background-color: #ffd9fc4c; /* ou qualquer cor desejada */
+}
+
+.navbarContainer .nav.visible {
+  opacity: 0;
+  transform: translateX(0);
+  animation: fadeIn 0.3s forwards;
+  transition: 0.2s;
+}
+
+.navbarContainer .nav.visible:hover {
+  color: rgb(254, 151, 253);
+}
+
+.navbarContainer .nav.visible:nth-of-type(2) {
+  animation-delay: 0s;
+}
+
+.navbarContainer .nav.visible:nth-of-type(3) {
+  animation-delay: 0.1s;
+}
+
+.navbarContainer .nav.visible:nth-of-type(4) {
+  animation-delay: 0.2s;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+    transform: translateX(-10px);
+  }
+}
+
+
+@media (max-width: 1080px) {
+
+  .navbarContainer .nav.visible:hover {
+    color: rgb(0, 0, 0);
+  }
+
+  .navbarContainer .linebar {
+    bottom: 0;
+    position: relative;
+    opacity: 1;
+  }
+
+  
+}
+
+@media (max-width: 768px) {
+  .navbarContainer .linebar {
+    bottom: 0;
+    opacity: 1;
+  }
+}

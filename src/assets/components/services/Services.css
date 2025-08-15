@@ -1,0 +1,137 @@
+.services-container {
+  background-color: #ffd9fc;
+  box-shadow: 0 0px 15px rgba(1, 1, 1, 0.559);
+  display: flex;
+  flex-direction: column;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-bottom: 5%;
+}
+
+.card-container{
+  height: 60vh;
+  display: flex;
+  align-items: center;
+  gap: 10rem;
+}
+
+.cards-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: auto;
+  gap: 1rem;
+  overflow-x: auto;
+  overflow-y: hidden;
+  white-space: nowrap;
+  /*flex-wrap: wrap;*/
+}
+
+.services-container .card {
+  flex-shrink: 0;
+  width: clamp(150px, 22vw, 250px);
+  max-height: clamp(150px, 22vw, 250px);
+  padding: 0.5rem;
+  padding-bottom: 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.076);
+  border-radius: 15px;
+  padding-bottom: 2rem;
+  margin-right: 1rem;
+  margin-top: 1rem;
+}
+
+
+.card img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.114);
+  border-radius: 15px;
+}
+
+.card p {
+  flex: 1;
+  color: black;
+  margin: 0;
+  padding: 8px;
+  word-break: break-word; /* força quebra de palavra longa */
+  overflow-wrap: anywhere; /* quebra mesmo sem espaço */
+  white-space: normal; /* garante quebra em várias linhas */
+  display: flex;
+  align-items: center;  /* centraliza verticalmente */
+  justify-content: center; /* centraliza horizontalmente */
+  text-align: center;
+}
+
+
+
+
+.services-icon {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+}
+
+.services-icon .icon {
+  width: 28%;
+  height: 100px;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+
+}
+
+.services-icon img {
+  width: clamp(40px, 10vw, 80px);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.281);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.194);
+  border-radius: 50%;
+  padding: 0.5rem;
+  object-fit: cover;
+}
+
+
+.services-icon p {
+  color: black;
+  margin: 0;
+  font-size: clamp(1.1rem, 2.3vw, 1.8rem);
+}
+
+@media (max-width: 1080px) {
+  .services-icon .icon{
+    height: auto;
+  }
+  .card-container{
+    height: auto;
+    flex-direction: column;
+    gap: 0;
+  }
+  .cards-container {
+    display: flex;
+    justify-content: flex-start;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    flex-wrap: nowrap;
+  }
+
+}
+
+@media (max-width: 768px) {
+  .services-container {
+    padding-left: 0;
+    padding-right: 0;
+
+  }
+
+  .services-container {
+    gap: 2%;
+  }
+
+  .services-container .card {
+    margin: 1%;
+  }
+}

@@ -1,0 +1,117 @@
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  background: linear-gradient(to bottom, #ffd9fc, rgb(34, 34, 34) 100%);
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  scroll-behavior: smooth;
+
+}
+/* barra de rolagem global */
+body::-webkit-scrollbar {
+  width: 10px;
+}
+
+body::-webkit-scrollbar-track {
+  background: #fce4f7;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: #ff69b4;
+  border-radius: 10px;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+  background: #ff1493;
+}
+
+/* Firefox */
+body {
+  scrollbar-width: thin;
+  scrollbar-color: #ffb0d8 #fce4f700;
+}
+
+a {
+  
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  background-size: cover;
+  /* faz a imagem cobrir toda a tela */
+  background-position: center;
+  /* centraliza */
+  background-repeat: no-repeat;
+  margin: 0;
+  padding: 0;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+section {
+  margin-top: 5%;
+}
+
+h1 {
+  font-size: clamp(2rem, 3vw, 4rem);
+  line-height: 1.1;
+  color: black;
+}
+
+h2 {
+  font-size: clamp(1rem, 1.5vw, 2rem);
+  color: black;
+  line-height: 1.1;
+}
+
+a {
+  font-size: clamp(1.4rem, 3vw, 3rem);
+  color: black;
+}
+
+p {
+  margin: 0;
+    padding: 5% 5% 5% 5%;
+  color: rgb(0, 0, 0);
+  font-size: clamp(0.8rem, 1.8vw, 1.5rem);
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+
+  a:hover {
+    color: #747bff;
+  }
+
+  button {
+    background-color: #f9f9f9;
+  }
+}

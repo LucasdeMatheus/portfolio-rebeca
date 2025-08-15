@@ -1,0 +1,44 @@
+.container-contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 1rem;
+}
+
+.container-contact a {
+    font-size: clamp(1rem, 1.8vw, 4rem);
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5%;
+    width: clamp(15.8rem, 30vw, 24rem);
+    height: clamp(3.3rem, 5vw, 5rem);
+    padding: 0 0.5rem;
+    background-color: rgba(245, 245, 245, 0.048);
+    border-radius: 1rem;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.281);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.194);
+}
+
+
+a .icon {
+    color: green;
+}
+
+.container-contact a {
+    transition: 0.2s;
+}
+
+.container-contact a:hover {
+    background-color: #ffc8fb;
+    transform: scale(1.05);
+}
+
+@media (max-width: 1080px) {
+    .container-contact a:hover {
+        background-color: #ffd9fc;
+        transform: scale(1);
+    }
+}

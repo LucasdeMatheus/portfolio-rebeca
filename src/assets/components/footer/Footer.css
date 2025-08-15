@@ -1,0 +1,16 @@
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    padding-top: 20%;
+    
+}
+.footer-content a{
+    
+    color: rgb(54, 101, 244);
+  font-size: clamp(0.8rem, 1.8vw, 1.5rem);
+
+}
+.footer-content p{
+  color: white;
+  margin: 0;
+}

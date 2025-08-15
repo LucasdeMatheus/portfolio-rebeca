@@ -1,0 +1,33 @@
+.container-location{
+    box-shadow: 0 0px 15px rgba(1, 1, 1, 0.559);
+    background-color: #ffd9fc;
+  padding-top: 2%;
+  padding-bottom: 5%;
+    padding: 1% 5% 5% 5%;
+}
+
+.container-location iframe {
+  width: 60%;        /* ocupa toda a largura do container */
+  aspect-ratio: 16/9; /* altura proporcional à largura */
+  border: 0;
+    box-shadow: 0 0px 15px rgba(1, 1, 1, 0.419);
+
+}
+
+.container-location .location{
+  margin-top: 5%;
+  display: flex;
+  align-items: center;
+  gap: 5rem;
+}
+.container-location .convite{
+  display: flex;
+  flex-direction: column;
+}
+
+@media (max-width: 1080px) {
+  .container-location .location{
+    flex-direction: column;
+    gap: 0;
+  }
+}
